@@ -1,0 +1,33 @@
+.hero-desc {
+  padding: 1rem;
+  .subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: $primary-color;
+  }
+  .title {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    color: $primary-color;
+  }
+  p {
+    color: $text-color;
+    margin-bottom: 3rem;
+    b {
+      color: $primary-color;
+    }
+  }
+  .btn-box {
+    a {
+      &:first-child {
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+      }
+      &:last-child {
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+      }
+    }
+  }
+}

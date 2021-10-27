@@ -1,0 +1,9 @@
+.section-about {
+  @include grid(40rem);
+
+  padding: 5rem 9%;
+  min-height: 90vh;
+  align-items: center;
+}
+@import "about-img";
+@import "about-desc";

@@ -1,0 +1,65 @@
+.navbar {
+  ul {
+    @include flex(center, center);
+    li {
+      a {
+        margin: 0 1rem;
+        text-transform: capitalize;
+        color: $primary-color;
+        display: inline-block;
+        font-size: 1.8rem;
+        position: relative;
+        padding: 0.3rem 0.5rem;
+
+        &:hover,
+        &.active {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  @include desktop {
+    display: none;
+  }
+}
+// Toggle menu
+.toggle-menu {
+  cursor: pointer;
+  display: none;
+  .bar {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $primary-color;
+    margin: 0.5rem 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    &:nth-child(2) {
+      width: 2.5rem;
+    }
+    &:nth-child(3) {
+      width: 2.1rem;
+    }
+  }
+  &:hover .bar:nth-child(2),
+  &:hover .bar:nth-child(3) {
+    width: 100%;
+  }
+  &.active {
+    .bar {
+      &:nth-child(1) {
+        width: 3rem;
+        transform: rotate(45deg) translate(8px, 3px);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        width: 3rem;
+        transform: rotate(-45deg) translate(3px, 3px);
+      }
+    }
+  }
+  @include desktop {
+    display: inline-block;
+  }
+}

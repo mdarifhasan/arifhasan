@@ -1,0 +1,28 @@
+.about-img {
+  @include flex(center, center);
+  position: relative;
+  .circle {
+    border: 1rem solid $secondary-color-light;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: $primary-color;
+
+    img {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15%;
+    left: 10%;
+    width: 35rem;
+    height: 35rem;
+    background: #f3a15e70;
+    border-radius: 50%;
+  }
+}

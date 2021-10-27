@@ -1,0 +1,24 @@
+.service-container {
+  @include grid(32rem);
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+.service-box {
+  box-shadow: $box-shadow-2;
+  background: $white;
+  margin: 3rem 2rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: $z-service;
+  background-color: $white;
+  .service-number {
+    font-size: 5rem;
+  }
+
+  &:hover {
+    margin-top: 3rem;
+    box-shadow: $box-shadow;
+  }
+}

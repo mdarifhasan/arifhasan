@@ -1,0 +1,9 @@
+.hero {
+  @include grid(40rem);
+  align-items: center;
+  background-color: $light-bg;
+  z-index: $z-hero;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+@import "hero-desc";
+@import "hero-img";

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  @include tablet {
+    font-size: 55%;
+  }
+  @include smartPhone {
+    font-size: 48.5%;
+  }
+}
+body,
+p,
+input {
+  font-size: 1.8rem;
+  font-family: $text-font;
+  line-height: 1.7;
+  color: $text-color;
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: $heading-font;
+}
+section {
+  padding: 4rem 9%;
+}
