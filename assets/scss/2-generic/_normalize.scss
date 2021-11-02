@@ -12,7 +12,7 @@
 html {
   font-size: 62.5%;
   @include tablet {
-    font-size: 55%;
+    font-size: 55.5%;
   }
   @include smartPhone {
     font-size: 48.5%;
@@ -27,6 +27,9 @@ input {
   color: $text-color;
   font-weight: 500;
 }
+body {
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -38,4 +41,18 @@ a {
 }
 section {
   padding: 4rem 9%;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 3%;
+  right: 4%;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  &:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
 }

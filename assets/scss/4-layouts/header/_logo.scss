@@ -1,71 +1,82 @@
-.logo {
-  position: relative;
-  border: 3px solid $secondary-color;
-  padding: 0.8rem 2rem;
-  display: inline-block;
-  cursor: pointer;
-  &::before {
-    position: absolute;
-    content: "";
-    top: -5%;
-    left: -3%;
-    background-color: $primary-color;
-    width: 0.3rem;
-    height: 0.3rem;
-    animation: logoLeft 5s linear infinite;
-    animation-direction: alternate-reverse;
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -5%;
-    right: -3%;
-    background-color: $primary-color;
-    width: 0.3rem;
-    height: 0.3rem;
-    animation: logoRight 5s linear infinite;
-    animation-direction: alternate-reverse;
-  }
+// .logo {
+//   position: relative;
+//   border: 3px solid $secondary-color;
+//   padding: 0.8rem 2rem;
+//   display: inline-block;
+//   cursor: pointer;
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     top: -5%;
+//     left: -3%;
+//     background-color: $primary-color;
+//     width: 0.3rem;
+//     height: 0.3rem;
+//     animation: logoLeft 5s linear infinite;
+//     animation-direction: alternate-reverse;
+//   }
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     bottom: -5%;
+//     right: -3%;
+//     background-color: $primary-color;
+//     width: 0.3rem;
+//     height: 0.3rem;
+//     animation: logoRight 5s linear infinite;
+//     animation-direction: alternate-reverse;
+//   }
 
-  h2 {
-    color: #051622;
-    font-size: 1.5rem;
-    font-family: $heading-font;
-    border-bottom: 1px solid #fb9039;
-    padding-bottom: 0.4rem;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    &:after {
-      position: absolute;
-      content: "";
-      top: 0%;
-      right: 0%;
-      width: 1rem;
-      height: 3px;
-      background: #051622;
-      transform: rotate(-45deg);
-      transform-origin: 6px -35px;
-    }
+//   h2 {
+//     color: #051622;
+//     font-size: 1.5rem;
+//     font-family: $heading-font;
+//     border-bottom: 1px solid #fb9039;
+//     padding-bottom: 0.4rem;
+//     position: relative;
+//     font-weight: 800;
+//     text-transform: uppercase;
+//     &:after {
+//       position: absolute;
+//       content: "";
+//       top: 0%;
+//       right: 0%;
+//       width: 1rem;
+//       height: 3px;
+//       background: #051622;
+//       transform: rotate(-45deg);
+//       transform-origin: 6px -35px;
+//     }
+//   }
+//   span {
+//     padding: 0.5rem 0 0 0;
+//     display: block;
+//     font-size: 1rem;
+//     color: #051622;
+//     font-family: "Comfortaa", cursive;
+//     position: relative;
+//     text-transform: capitalize;
+//     &::before {
+//       position: absolute;
+//       content: "";
+//       bottom: 0;
+//       left: 0;
+//       width: 1rem;
+//       height: 3px;
+//       background: #051622;
+//       transform: rotate(-45deg);
+//       transform-origin: 3px 38px;
+//     }
+//   }
+// }
+
+.logo {
+  img {
+    transition: 0.3s linear;
+    width: 90%;
+    height: 90%;
   }
-  span {
-    padding: 0.5rem 0 0 0;
-    display: block;
-    font-size: 1rem;
-    color: #051622;
-    font-family: "Comfortaa", cursive;
-    position: relative;
-    text-transform: capitalize;
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 1rem;
-      height: 3px;
-      background: #051622;
-      transform: rotate(-45deg);
-      transform-origin: 3px 38px;
-    }
+  img.sticky {
+    display: none;
   }
 }

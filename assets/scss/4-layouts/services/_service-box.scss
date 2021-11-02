@@ -3,6 +3,8 @@
   align-items: center;
   justify-items: center;
   margin-top: 2rem;
+
+  align-items: center;
 }
 .service-box {
   box-shadow: $box-shadow-2;
@@ -13,12 +15,25 @@
   overflow: hidden;
   z-index: $z-service;
   background-color: $white;
+
   .service-number {
-    font-size: 5rem;
+    font-size: 15rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: $light-bg-text;
+  }
+  .service-heading {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $primary-color;
+  }
+  p {
   }
 
   &:hover {
-    margin-top: 3rem;
     box-shadow: $box-shadow;
   }
 }

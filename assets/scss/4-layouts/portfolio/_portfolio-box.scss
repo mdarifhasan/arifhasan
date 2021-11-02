@@ -1,0 +1,29 @@
+.portfolio-box {
+  position: relative;
+  margin: 2rem 1rem;
+  background-color: greenyellow;
+  width: 30rem;
+  height: 25rem;
+  cursor: pointer;
+  background-position: top left;
+  background-size: cover;
+  transition: 3s ease-in-out;
+  &:hover {
+    background-position: bottom right;
+  }
+  h2 {
+    position: absolute;
+    bottom: 0%;
+    background: $light-bg;
+    color: $primary-color;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover h2 {
+    bottom: -18%;
+    opacity: 1;
+    visibility: visible;
+  }
+}

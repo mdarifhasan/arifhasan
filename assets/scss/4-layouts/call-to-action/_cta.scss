@@ -1,0 +1,60 @@
+.cta {
+  @include flex(space-between, center);
+  flex-wrap: wrap;
+  background-color: $primary-color;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  margin-bottom: -5rem;
+  padding: 3rem 9% 8rem;
+  h2 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: $white;
+  }
+  .btn-border {
+    border: none;
+    position: relative;
+    margin-right: 2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0%;
+      border-top: 2px solid $secondary-color;
+      border-left: 2px solid $secondary-color;
+      width: 20%;
+      height: 40%;
+      box-sizing: border-box;
+      transition: all 0.4s ease-in-out;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0%;
+      border-right: 2px solid $secondary-color;
+      border-bottom: 2px solid $secondary-color;
+      width: 20%;
+      height: 40%;
+      box-sizing: border-box;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover::after {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover::before {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // Responsive
+  @include largeDesktop {
+    h2 {
+      text-align: center;
+    }
+    .btn-border {
+      margin-top: 2rem;
+    }
+  }
+}

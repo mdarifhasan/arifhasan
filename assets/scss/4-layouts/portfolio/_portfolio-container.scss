@@ -1,0 +1,12 @@
+.portfolio-container {
+  @include flex(center, center);
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  @for $i from 1 to 10 {
+    .box-#{$i} {
+      background-image: background-url("portfolio-#{$i}.png");
+    }
+  }
+}

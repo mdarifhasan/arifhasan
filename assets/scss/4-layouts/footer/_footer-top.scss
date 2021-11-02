@@ -1,0 +1,15 @@
+.footer-top {
+  @include flex(space-between, center);
+  flex-wrap: wrap;
+  border-bottom: 1px solid $primary-color-light;
+  padding: 5rem 0;
+  .left {
+    .social-box {
+      margin-top: 3rem;
+      img {
+        width: 2.5rem;
+        margin: 0 0.4rem;
+      }
+    }
+  }
+}

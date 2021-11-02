@@ -1,0 +1,9 @@
+.contact-destails {
+  background-color: $primary-color;
+  padding: 3rem 0;
+  @include flex(center, center);
+  flex-direction: column;
+  p {
+    color: $secondary-color;
+  }
+}

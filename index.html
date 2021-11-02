@@ -12,6 +12,12 @@
       type="image/x-icon"
     />
     <!-- flat icons  -->
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/main.min.css" />
   </head>
@@ -20,18 +26,17 @@
     <header id="header">
       <!-- Logo -->
       <a href="#" class="logo">
-        <h2 class="text-center">Arif hasan</h2>
-        <span>web desginer & developer</span>
+        <img src="assets/img/logo1.svg" alt="" />
       </a>
       <!-- Menu -->
       <nav class="navbar">
         <ul class="navbar-nav">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">working process</a></li>
-          <li><a class="" href="#">contact</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="service.html">services</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="working.html">working process</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
       <div class="toggle-menu">
@@ -45,29 +50,30 @@
 
     <!-- ======Hero area start====== -->
     <main class="hero section-padding">
-      <div class="hero-desc">
+      <div class="hero-img"></div>
+      <div class="hero-desc text-right">
         <h2 class="subtitle">execute your thoughts through my code</h2>
         <h2 class="title">Hi,I am Arif Hasan</h2>
         <p>
           I am a professional <b>Web Desginer</b> & <b>Wordpress Developer</b>.
-          My first priority is client 100% saticfaction.I develop and manage my
-          customers projects with a keen eye for details and a focus on time
-          management to ensure on-time delivery. I have done many Wordpress
-          Website Designs locally with fully satisfied customers.
+          I have been working in this sector all most 2 years. My first priority
+          is client 100% saticfaction.I develop and manage my customers projects
+          with a keen eye for details and a focus on time management to ensure
+          on-time delivery. I have done many Wordpress Website Designs locally
+          with fully satisfied customers.
         </p>
         <div class="btn-box">
           <a href="#" class="btn-solid">Contact me</a>
           <a href="#" class="btn-border active">know more</a>
         </div>
       </div>
-      <div class="hero-img"></div>
     </main>
     <!-- ======Hero area end====== -->
 
     <!-- ======About me section start===== -->
-    <section class="section-about">
+    <section class="about">
       <div class="about-desc">
-        <h2 class="section-title">Who's this guy?</h2>
+        <h2 class="">Who's this guy?</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid
           asperiores aspernatur, veniam blanditiis quis consectetur facere nobis
@@ -86,6 +92,7 @@
 
     <!-- ======Services section start======== -->
     <section class="section-services">
+      <a href="service.html" class="view-all-btn">view all</a>
       <div class="service-title section-title text-center">
         <h2>Services i provide</h2>
         <h3>
@@ -97,6 +104,7 @@
         <!-- Single service -->
         <div class="service-box">
           <h2 class="service-number">01</h2>
+          <h3 class="service-heading">Design website</h3>
           <p class="service-details">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
             veritatis eveniet eius neque necessitatibus temporibus officia id
@@ -106,6 +114,7 @@
         <!-- Single service -->
         <div class="service-box">
           <h2 class="service-number">02</h2>
+          <h3 class="service-heading">develop website</h3>
           <p class="service-details">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
             veritatis eveniet eius neque necessitatibus temporibus officia id
@@ -115,6 +124,7 @@
         <!-- Single service -->
         <div class="service-box">
           <h2 class="service-number">03</h2>
+          <h3 class="service-heading">maintain website</h3>
           <p class="service-details">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
             veritatis eveniet eius neque necessitatibus temporibus officia id
@@ -133,6 +143,39 @@
           one's skill can be measure by the work which he has done before!
         </h3>
       </div>
+      <!-- Portfolio container -->
+      <ul class="portfolio-filter-menu">
+        <li data-filter="*">All</li>
+        <li data-filter=".web-design">web design</li>
+        <li data-filter=".wordpress-customization">wordpress customization</li>
+        <li data-filter=".wordpress-custom-theme">wordpress custom theme</li>
+      </ul>
+      <div class="portfolio-container">
+        <!-- single portfolio -->
+        <div class="portfolio-box box-1 web-design">
+          <h2 class="title">owlter</h2>
+        </div>
+        <!-- single portfolio -->
+        <div class="portfolio-box box-1 web-design wordpress-customization">
+          <h2 class="title">owlter</h2>
+        </div>
+        <!-- single portfolio -->
+        <div class="portfolio-box box-1 wordpress-custom-theme web-design">
+          <h2 class="title">owlter</h2>
+        </div>
+        <!-- single portfolio -->
+        <div class="portfolio-box box-1 web-design">
+          <h2 class="title">owlter</h2>
+        </div>
+        <!-- single portfolio -->
+        <div class="portfolio-box box-1 wordpress-custom-theme">
+          <h2 class="title">owlter</h2>
+        </div>
+        <!-- single portfolio -->
+        <div class="portfolio-box box-1 wordpress-custom-theme">
+          <h2 class="title">owlter</h2>
+        </div>
+      </div>
     </section>
     <!--====== Portfolio section end====== -->
 
@@ -140,34 +183,90 @@
     <section class="working-process">
       <div class="working-process-desc section-title text-center">
         <h2>want to know how do i work?</h2>
-        <h3>
-          one's skill can be measure by the work which he has done before!
-        </h3>
+        <h3>Perfection come while walking in the right process of work</h3>
+      </div>
+      <div class="working-process-inside">
+        <div class="working-process-box">
+          <div class="animation animation-discussion"></div>
+          <h2>Discussion</h2>
+        </div>
+        <div class="working-process-box">
+          <div class="animation animation-search"></div>
+          <h2>research</h2>
+        </div>
+        <div class="working-process-box">
+          <div class="animation animation-wireframe"></div>
+          <h2>wireframe</h2>
+        </div>
+        <div class="working-process-box">
+          <div class="animation animation-main-design"></div>
+          <h2>main design</h2>
+        </div>
+        <div class="working-process-box">
+          <div class="animation animation-development"></div>
+          <h2>development</h2>
+        </div>
+        <div class="working-process-box">
+          <div class="animation animation-support"></div>
+          <h2>support</h2>
+        </div>
       </div>
     </section>
     <!--====== Working process section end====== -->
 
-    <!--====== contact section start====== -->
-    <section class="contact">
-      <div class="contact-desc section-title text-center">
-        <h2>connect with me</h2>
-        <h3>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
-          praesentium.
-        </h3>
+    <!--====== cta section start====== -->
+    <section class="cta">
+      <h2>let's work together</h2>
+      <div class="cta-btn-box">
+        <a class="btn-border" href="#">contact me</a>
+        <a class="btn-border" href="#">order on fiver</a>
+        <a class="btn-border" href="#">order on upwork</a>
       </div>
     </section>
-    <!--====== contact section end====== -->
-
-    <!--====== cta section start====== -->
-    <section class="cta"></section>
     <!--====== cta section end====== -->
 
     <!-- ======footer section start===== -->
-    <footer id="footer"></footer>
+    <footer id="footer" class="">
+      <div class="footer-top">
+        <div class="left">
+          <!-- Logo -->
+          <a href="#" class="logo">
+            <img src="assets/img/logo1.svg" alt="" />
+          </a>
+          <!-- social box -->
+          <div class="social-box">
+            <a href="#"><img src="assets/img/001-linkedin.png" alt="" /></a>
+            <a href="https://www.facebook.com/arifhasan.coder"
+              ><img src="assets/img/002-facebook.png" alt=""
+            /></a>
+            <a href="#"><img src="assets/img/003-github-sign.png" alt="" /></a>
+            <a href="#"><img src="assets/img/004-instagram.png" alt="" /></a>
+            <a href="#"><img src="assets/img/005-twitter.png" alt="" /></a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-box">
+          <input type="email" name="#" id="newsletter-email" />
+          <input type="submit" name="#" id="newsletter-submit" value="join" />
+        </div>
+      </div>
+
+      <div class="footer-bootom">
+        <h2 class="copyright-text text-center">
+          &copy; all rights reserved by <a href="mdarifhasan.com">Arif Hasan</a>
+        </h2>
+      </div>
+    </footer>
     <!-- ======footer section end===== -->
+    <!-- Scroll to top -->
+    <a href="#" id="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- js file -->
+    <!-- jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!--isotop jquery -->
+    <script src="assets/js/isotop.min.js"></script>
     <!-- Lottie bodymovin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
     <!-- custom js -->
